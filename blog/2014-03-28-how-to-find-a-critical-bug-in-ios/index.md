@@ -122,6 +122,8 @@ As you see it, the bug is quite old. If you wanna test your device / iOS version
 
 So it goes.
 
+---
+
 **Update from May 12, 2014:** I have reported this issue to Apple a month before the post was published. It's not fixed yet, even in iOS 7.1.1. It looks like they are overloaded with critical bugs and have no time to fix this one :(
 
 **Update from Jun 20, 2014:** Apple wrote a mail. They are going to assign a CVE number to the bug and fix it. Well, better later then never...
@@ -147,3 +149,5 @@ So it goes.
 > CVE-2014-1354 : Dima Kovalenko of codedigging.com
 
 So finally they fixed the bug in iOS 7.1.2.
+
+---

@@ -7,7 +7,11 @@ math: false
 type: post
 ---
 
+---
+
 __Warning!__ At the moment, the guide is obsolete. It makes sense to read [the updated and extended version of this guide](../2016-04-27-debugging-ios-binaries-with-lldb/).
+
+---
 
 Today we will talk about installation of LLDB (on Mac OS) and debugserver (on iOS 7.0-7.0.4).
 

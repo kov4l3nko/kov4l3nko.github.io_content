@@ -9,8 +9,6 @@ type: post
 
 Reversing Android malware, I see the same technical tricks in almost every malicious code. In this article, I describe two simple tricks used by numerous Android malware makers to hide their malware applications.
 
-
-
 # Create an application
 
 Lets [download the latest version of Android SDK](https://developer.android.com/sdk/index.html) with Android Studio, [install it](https://developer.android.com/sdk/installing/index.html?pkg=studio) and [add some SDK packages](https://developer.android.com/sdk/installing/adding-packages.html) (if Android Studio is already installed on your PC, just skip this step). Then start Android Studio and use its startup wizard to create an app:

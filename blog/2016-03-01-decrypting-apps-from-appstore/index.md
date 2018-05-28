@@ -161,7 +161,11 @@ Run the application on your iOS device and ssh the device. Then connect debugser
 
 The offset for `Kik` image is 0x000f3000.
 
-**Warning!** If the executable was compiled with PIE (ASLR) flag, the image offset changes every application start. ■
+---
+
+**Warning!** If the executable was compiled with PIE (ASLR) flag, the image offset changes every application start.
+
+---
 
 Let's dump the encrypted part of the application with the following lldb command:
 
@@ -230,7 +234,11 @@ Run the application on your iOS device and ssh the device. Then connect debugser
 
 The offset for `Instagram` image is `0x00033000`.
 
-**Warning!** If the executable was compiled with PIE (ASLR) flag, the image offset changes every application start. ■
+---
+
+**Warning!** If the executable was compiled with PIE (ASLR) flag, the image offset changes every application start.
+
+---
 
 Let's dump the encrypted part of the application with the following lldb command:
 

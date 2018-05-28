@@ -33,7 +33,11 @@ This is what we need to start:
 
 * We need a Mac with the latest OS X.
 
-**Note!** `gdb` and `gdbserver` are also available for Windows and Linux, so the guide (with some minor changes) is probably applicable to Windows and Linux as well. ★
+---
+
+**Note!** `gdb` and `gdbserver` are also available for Windows and Linux, so the guide (with some minor changes) is probably applicable to Windows and Linux as well.
+
+---
 
 # Preparations
 
@@ -67,6 +71,8 @@ Let's connect GDB to an Android demon, for example, to `installd`:
 
 In the same way, we can debug native code from `.so` libs of running Android applications.
 
+---
+
 __Note!__ If you do not see symbols in loaded modules, try the following:
 
 * Create a local directory on your Mac, e.g. `local_sys_copy` and copy `/system/lib` (`/system/lib64` for 64-bit devices) from your Android device to the local directory. If you debug a Java application with native methods, copy application's `.so` libraries to the local directory as well.
@@ -76,4 +82,6 @@ __Note!__ If you do not see symbols in loaded modules, try the following:
 	(gdb) set solib-search-path path/to/your/local_sys_copy/
 	```
 
-	In most cases, GDB reads the `.so` libs from the local directories and loads the symbols, so you can set breakpoints on function names, find function addresses by names etc. ★
+	In most cases, GDB reads the `.so` libs from the local directories and loads the symbols, so you can set breakpoints on function names, find function addresses by names etc.
+
+---

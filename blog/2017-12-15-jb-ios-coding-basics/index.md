@@ -25,7 +25,11 @@ This guide was tested with
 2. iPad mini 2 with iOS 9.0.2 + Pangu9 jailbreak
 3. iPad mini 2 with iOS 10.1.1 + Yalu jailbreak
 
+---
+
 __Note!__ In fact, the way to create command line tools / DYLIBs for iOS, described below, is a hack. Therefore I can't guarantee it will work in your environment correctly.
+
+---
 
 ## Apple certificate
 
@@ -57,7 +61,11 @@ Login to XCode with an Apple ID and create an iOS developer certificate:
 
     ![](cert_list.png)
 
-__Note!__ At the moment, it's not clear how to compile/sign command line tools for iOS with XCode "right from the box". Maybe some unofficial "extensions" may help, e.g. [iOSOpenDev](http://iosopendev.com). ★
+---
+
+__Note!__ At the moment, it's not clear how to compile/sign command line tools for iOS with XCode "right from the box". Maybe some unofficial "extensions" may help, e.g. [iOSOpenDev](http://iosopendev.com).
+
+---
 
 ## Self-signed certificate
 
@@ -127,11 +135,19 @@ Just create a command line tool XCode project:
 
 5. Finally, we write C/C++ code with Xcode IDE.
 
-__Note!__ If the code (or, at least, some of it's parts) is not platform specific, we may consider testing it on MacOS, without iOS devices. ★
+---
+
+__Note!__ If the code (or, at least, some of it's parts) is not platform specific, we may consider testing it on MacOS, without iOS devices.
+
+---
 
 ## Compilation for iOS from command line or Makefile
 
-__Note!__ As it was noted above, at the moment, it's not clear how to compile/sign command line tools for iOS with XCode "right from the box". Maybe some unofficial "extensions" may help, e.g. [iOSOpenDev](http://iosopendev.com). ★
+---
+
+__Note!__ As it was noted above, at the moment, it's not clear how to compile/sign command line tools for iOS with XCode "right from the box". Maybe some unofficial "extensions" may help, e.g. [iOSOpenDev](http://iosopendev.com).
+
+---
 
 A minimal Makefile for sources containing single `main.c` file:
 

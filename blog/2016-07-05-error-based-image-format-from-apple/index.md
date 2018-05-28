@@ -11,6 +11,12 @@ The research is kind of a geek joke for reverse engineers, please don't take it 
 
 # A quick word on Netpbm image formats
 
+---
+
+__UPDATE from Dec 10, 2017:__ The PBM image is not visible in the latest desktop/mobile Safari anymore. Maybe they canceled PBM support (it would be a smart move, BTW).
+
+---
+
 Netpbm formats are quite old image formats developed in the 1980s. However, the latest Safari browsers (Safari 9.1.1 on Mac and MobileSafari on iOS 9.x) still support them.
 
 Here is a test example for your browser:
@@ -18,8 +24,6 @@ Here is a test example for your browser:
 ![](example.pbm)
 
 If you see a small (24x7 pixels) "FEEP" above, your browser supports Netpbm formats. If you see nothing, try to open this page with a desktop Safari on Mac or MobileSafari on iOS 9.x.
-
-__UPDATE from Dec 10, 2017:__ The PBM image is not visible in the latest desktop/mobile Safari anymore. Maybe they canceled PBM support (it would be a smart move, BTW). ■
 
 Netpbm image is a text file with `.pbm` extension. I'll not describe Netpbm formats in details, they are plaintext and quite simple. Please take 5 min to read the [Netpbm format](https://en.wikipedia.org/wiki/Netpbm_format) article in Wikipedia.
 

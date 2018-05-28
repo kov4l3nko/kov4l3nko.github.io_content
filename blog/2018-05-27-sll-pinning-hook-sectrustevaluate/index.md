@@ -108,4 +108,10 @@ I tested the script on iPhone 5s running iOS 11.0.1 with Electra 1.0.4. It worke
 
 It didn't work for AppStore. I did not test it with other versions of Viber or iOS, with other apps, or on other devices. So I'm not sure it will work for you. 
 
-_Anyway, if you wanna try, do it on your own risk. Stable and safe work of the script is not guaranteed._ Happy reversing! :)
+---
+
+__WARNING!__ If you wanna try to use the script, do it on your own risk. Stable and safe work of the script is not guaranteed.
+
+---
+
+Happy reversing! :)

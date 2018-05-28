@@ -17,7 +17,11 @@ My contacts:
 
 Please do not take the blog seriously :) Here I share tutorials, talks and researches I did for fun. Most of my commercial researches are private and can't be shared because of agreements with the customers, so I usually do not post serious things to the blog.
 
-__Important!__ All header images in the blog are from _free_ photo stocks. Unfortunately, I can't be sure the images are really free for use (sometimes, free photo stocks steal copyrighted images, you know). If you recognise that some of the header images are copyrighted, please contact me, I'll remove the images. ★
+---
+
+__Important!__ All header images in the blog are from _free_ photo stocks. Unfortunately, I can't be sure the images are really free for use (sometimes, free photo stocks steal copyrighted images, you know). If you recognise that some of the header images are copyrighted, please contact me, I'll remove the images.
+
+---
 
 # Researches for money
 

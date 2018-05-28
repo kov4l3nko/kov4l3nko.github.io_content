@@ -7,7 +7,7 @@ math: false
 type: post
 ---
 
-Today we talk about breakpoint callbacks in LLDB Python scripts.<!-- more --> Setting breakpoints is easy. For example, write the Python script:
+Today we talk about breakpoint callbacks in LLDB Python scripts. Setting breakpoints is easy. For example, write the Python script:
 
 ```
 # This is test.py 

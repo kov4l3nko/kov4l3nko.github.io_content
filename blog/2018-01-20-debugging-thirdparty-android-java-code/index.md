@@ -46,6 +46,8 @@ On the Mac,
 
 No need to prepare your Android device in some special way, just make sure it works with Android Device Monitor (see step 2 above).
 
+---
+
 **Tip #1.** If you want to remove the current version of JDK, run
 
 ```
@@ -70,7 +72,7 @@ $ sudo rm -rf /Library/LaunchDaemons/com.oracle.java.Helper-Tool.plist
 $ sudo rm -rf /Library/Preferences/com.oracle.java.Helper-Tool.plist
 ```
 
-Done. ★
+Done.
 
 **Tip #2.** Consider adding the folder where you placed the smali/baksmali JAR's, to PATH, and creating simple shell script wrappers for the JAR's. Here is an example for `smali-2.2.2.jar`:
 
@@ -81,7 +83,9 @@ BASEDIR=$(dirname "$0")
 java -jar "$BASEDIR/smali-2.2.2.jar" "$@"
 ```
 
-So you just type `smali.sh` in Terminal, instead of annoying `java -jar <path/to/>smali-2.2.2.jar`. Anyway, further in the guide, I will use `smali.sh` and `baksmali.sh` wrappers for the JAR's. ★
+So you just type `smali.sh` in Terminal, instead of annoying `java -jar <path/to/>smali-2.2.2.jar`. Anyway, further in the guide, I will use `smali.sh` and `baksmali.sh` wrappers for the JAR's.
+
+---
 
 # How to debug APK
 
@@ -159,11 +163,15 @@ For example, let's debug Java code of [Skout](https://play.google.com/store/apps
 	Also, the app must be marked with a green bug icon in Android Device Monitor:
 	
 	![](green-bug.png)
-	
+
+---
+
 **Note!** Alternatively, you can run Android Monitor _before_ you create the remote configuration, look at the first port number
 
 ![](ddms-skout2.png)
 
-and use it in the remote configuration instead of `8700`. ★
+and use it in the remote configuration instead of `8700`.
+
+---
 
 Now you can set breakpoints in Dalvik code, trace Dalvik instructions, inspects registers etc.

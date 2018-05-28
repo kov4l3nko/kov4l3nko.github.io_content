@@ -40,8 +40,11 @@ Choose the iOS version running on your iOS device. Let it be `7.1`. Extract `deb
 $ hdiutil attach /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport/7.1/DeveloperDiskImage.dmg
 $ cp /Volumes/DeveloperDiskImage/usr/bin/debugserver ./
 ```
+---
 
-**Note!** `debugserver` is so-called "universal binary" with MachO fat header, it contains both ARM32 and ARM64 binaries, so don't care bitwise. ■
+**Note!** `debugserver` is so-called "universal binary" with MachO fat header, it contains both ARM32 and ARM64 binaries, so don't care bitwise.
+
+---
 
 Now you have `debugserver` binary in your current directory on your Mac. 
 
@@ -365,7 +368,11 @@ The `-x` parameter can be one of:
 * `posix`: Launch program using `posix_spawn()`.
 * `backboard`: Launch program via BackBoard Services.
 
-**Note!** Always use `backboard` to start iOS GUI applications! ■
+---
+
+**Note!** Always use `backboard` to start iOS GUI applications!
+
+---
 
 Run LLDB on your Mac and connect `debugserver` via network
 
@@ -397,7 +404,11 @@ Use the following commands to load all images:
 
 Now it's ready for debugging.
 
-**Note!** One can add the commands to `.lldbinit`, but sometimes it does not work by unknown reasons. ■
+---
+
+**Note!** One can add the commands to `.lldbinit`, but sometimes it does not work by unknown reasons.
+
+---
 
 # ASLR
 
@@ -462,7 +473,11 @@ Viber`___lldb_unnamed_function744$$Viber:
 
 ## Removing ASLR
 
-**Warning!** This method can't be applied to any jailbroken device. It is not clear why, but some jailbroken devices do not start altered binaries (it's mostly about apps from AppStore). E.g. my iPhone 4 with iOS 7 runs patched binaries, my iPad mini 2 with iOS 9 does not. I did not dig that, it looks like it depends on a jailbreak. ■
+---
+
+**Warning!** This method can't be applied to any jailbroken device. It is not clear why, but some jailbroken devices do not start altered binaries (it's mostly about apps from AppStore). E.g. my iPhone 4 with iOS 7 runs patched binaries, my iPad mini 2 with iOS 9 does not. I did not dig that, it looks like it depends on a jailbreak.
+
+---
 
 There are several steps:
 
@@ -490,9 +505,13 @@ Now do something to start the `absd` daemon (e.g. logout/login in iMessage), att
 
 ![](absd-no-aslr.png)
 
-**Warning!** If something goes wrong, e.g. the modified binary does not start, then try to follow the instruction above, but skip re-singing the binary! Sometimes it works. ■
+---
 
-**Warning!** Sometimes, a modified binary (without ASLR) won't start after device reboot. To solve this solution, copy the original (unmodified) binary to it's original place on the device, start it once, then kill the process. Finally, replace the original binary with the modified one, and start the modified one. Now the modified binary should start normally. ■
+**Warning!** If something goes wrong, e.g. the modified binary does not start, then try to follow the instruction above, but skip re-singing the binary! Sometimes it works.
+
+**Warning!** Sometimes, a modified binary (without ASLR) won't start after device reboot. To solve this solution, copy the original (unmodified) binary to it's original place on the device, start it once, then kill the process. Finally, replace the original binary with the modified one, and start the modified one. Now the modified binary should start normally.
+
+---
 
 # Using a decrypted binary
 

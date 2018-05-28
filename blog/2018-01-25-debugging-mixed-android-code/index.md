@@ -32,7 +32,11 @@ Check your Android device:
 	![gbdserver-location](gbdserver-location.png)
 5. "USB debugging" is enabled
 
-__Note!__ Most probably, you need one more step. Create a dedicated local directory on your Mac and copy `/system/lib` (`/system/lib64` for 64-bit devices) from your Android device to the dedicated directory. In other words, make a local copy of Android `/system/lib` on your Mac. ★
+---
+
+__Note!__ Most probably, you need one more step. Create a dedicated local directory on your Mac and copy `/system/lib` (`/system/lib64` for 64-bit devices) from your Android device to the dedicated directory. In other words, make a local copy of Android `/system/lib` on your Mac.
+
+---
 
 Check your Mac:
 
@@ -75,6 +79,8 @@ Check your Mac:
 7. The latest [Android NDK](https://developer.android.com/ndk/index.html) installed
 8. Also, you need a disassembler to disassemble/analyse `.so` libraries from your Android device (e.g. my devices have CPUs with Thumb/ARM, ARM64, or x86_64 architecture, so I use [Hopper](https://hopperapp.com) to disassemble `.so` libraries)
 
+---
+
 __Recommendation!__ Two things to keep it simple:
 
 * Cover smali and baksmali JAR with shell scripts, e.g.
@@ -114,7 +120,9 @@ __Recommendation!__ Two things to keep it simple:
 	PATH=$PATH:~/android-ndk-r16b/prebuilt/darwin-x86_64/bin/
 	```
 
-No need to explain why this makes your life easier :) ★
+No need to explain why this makes your life easier :)
+
+---
 
 ## Preparations
 
@@ -217,7 +225,11 @@ Consider [Skout](https://play.google.com/store/apps/details?id=com.skout.android
 
 	![](ddms-skout.png)
 
-	__Note!__ Keep Android Device Monitor open until you finished debugging the app! Also, the app must be selected in Android Device Monitor while you are debugging the app! ★
+	---
+
+	__Note!__ Keep Android Device Monitor open until you finished debugging the app! Also, the app must be selected in Android Device Monitor while you are debugging the app!
+	
+	---
 
 11. Switch back to Android Studio. In the main menu, click "Run" ➡ "Debug 'Unnamed'". As result, Android Studio must say 
 
@@ -231,11 +243,15 @@ Consider [Skout](https://play.google.com/store/apps/details?id=com.skout.android
 	
 	![](green-bug.png)
 	
+	---
+	
 	__Note!__ Alternatively, on step 4, you can specify an individual port instead of `8700`:
 	
 	![](ddms-skout2.png)
 	
-	In this case you don't need to keep Android Device Monitor open with the app selected. ★
+	In this case you don't need to keep Android Device Monitor open with the app selected.
+	
+	---
 
 12. If you have a local copy of Android `/system/lib/` (see the note in the previous section), copy application `.so` libs from the Android device to the same local folder on your Mac (with `adb pull` or, if you use SSH, `scp`). For Skout, the libs are in `/data/data/com.skout.android/lib/`.
 	
@@ -273,7 +289,11 @@ Consider [Skout](https://play.google.com/store/apps/details?id=com.skout.android
 
 Ready for debugging!
 
-__Note!__ If you do not create a local copy of `/system/lib/` (see the note in the previous subsection), you don't need step 12 and `set solib-search-path ...` GDB command on step 14. However, as result, you may get system/app libraries without any symbols. ★
+---
+
+__Note!__ If you do not create a local copy of `/system/lib/` (see the note in the previous subsection), you don't need step 12 and `set solib-search-path ...` GDB command on step 14. However, as result, you may get system/app libraries without any symbols.
+
+---
 
 
 ## How to debug
@@ -298,7 +318,11 @@ The debugging is simple:
 3. Do something to trigger native library loading and/or calling a native method you are interested in. As result, the breakpoint on the native method call in Smali code hits.
 5. Continue debugging in Android Studio, so the breakpoint on the corresponding function in native code hits in GDB. Now you can debug the native code with GDB.
 
-__Note!__ Android Studio debugging is frozen while you are debugging native code in GDB. So do not forget to continue executing native code with `(gdb) c` in GDB console. ★
+---
+
+__Note!__ Android Studio debugging is frozen while you are debugging native code in GDB. So do not forget to continue executing native code with `(gdb) c` in GDB console.
+
+---
 
 # Links
 

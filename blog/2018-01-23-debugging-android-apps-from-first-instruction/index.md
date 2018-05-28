@@ -23,7 +23,11 @@ Acting in this way, we may miss a lot of interesting things, e.g. `onCreate(...)
 
 For this trick, you need an Android device with a console to run command line utils on the device (you can use `adb shell` or install [SSHDroid](https://play.google.com/store/apps/details?id=berserker.android.apps.sshdroid) and just ssh the device from your Mac). Also, "USB debugging" must be enabled on the device.
 
-**Note!** If the trick does not work for you on a non-rooted Android device, try to root the device and run `am` as root (in `adb shell su` console or in an SSH console as root `#`). If root doesn't help... well, sorry, probably the best solution is to change the device/ROM and try again. ★
+---
+
+**Note!** If the trick does not work for you on a non-rooted Android device, try to root the device and run `am` as root (in `adb shell su` console or in an SSH console as root `#`). If root doesn't help... well, sorry, probably the best solution is to change the device/ROM and try again.
+
+---
 
 The trick itself is very simple. Follow [the guide](../2018-01-20-debugging-thirdparty-android-java-code/) (see the step-by-step instruction in "How to debug APK" section). On step 5, _"...run the app on your Android device..."_, 
 
@@ -34,6 +38,8 @@ The trick itself is very simple. Follow [the guide](../2018-01-20-debugging-thir
 	$ am start -W -D <the application package>/<the application activity to start>
 	```
 
+	---
+	
 	**Note!** You can find the application package by executing in the Android device console:
 	
 	```
@@ -49,7 +55,10 @@ The trick itself is very simple. Follow [the guide](../2018-01-20-debugging-thir
 		```
 		
 		it gives you a list of running apps activities. Find the right one and use it with the `am start -W -D` command line.
-	* ...or, if `am` on your device doesn't support `stack list` option, just look at the decompiled Dalvik code and recognize the name of the main activity yourself. ★
+		
+	* ...or, if `am` on your device doesn't support `stack list` option, just look at the decompiled Dalvik code and recognize the name of the main activity yourself.
+	
+	---
 
 	For example, the right `am start` command line for [Skout](https://play.google.com/store/apps/details?id=com.skout.android) app is
 	
@@ -60,6 +69,7 @@ The trick itself is very simple. Follow [the guide](../2018-01-20-debugging-thir
 	The result should look similar to
 	
 	![](waiting-for-debugger.png)
+	
 3. Switch to Android Studio, find the main activity class and set breackpoints at
 
 	```
