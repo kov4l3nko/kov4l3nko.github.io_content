@@ -216,11 +216,13 @@ ff: ...
 
     and go to step 2.
 
+---
+
 **Note!** I've explained the `pbmReadInt(...)` code logic in a (more or less) simple way. I made no references to `pbmReadInt(...)` machine code at all, but reversing the code took some time for me :)
 
 ![re_drafts.jpg](re_drafts.jpg)
 
-■
+---
 
 As we see it, `pbmReadInt(...)` considers the `-` char as a digit of value `45`. Obviously, it's an error, but... why don't we use it for fun? :)
 
