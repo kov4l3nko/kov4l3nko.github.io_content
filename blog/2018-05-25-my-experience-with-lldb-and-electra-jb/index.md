@@ -7,7 +7,11 @@ math: false
 type: post
 ---
 
-> The first edition of this article was written on March 18, 2018. This is the second edition, with some important updates.
+---
+
+The first edition of this article was written on March 18, 2018. This is the second edition, with some important updates.
+
+---
 
 I tried to google a short and clear instruction how to debug apps from AppStore on iOS devices jailbroken with [Electra](https://coolstar.org/electra/). I did not found anything useful, so I wrote this guide. It works for me, but I'm not sure it works for your. I tested it on 
 
@@ -127,7 +131,9 @@ In LLDB console, run
 (lldb) process connect connect://localhost:6666
 ```
 
-If you face an error, 
+---
+
+__Important!__ If you face an error, 
 
 1. Run the app without debugger
 2. Attach debugger to the app as described in the previous section
@@ -135,5 +141,7 @@ If you face an error,
 4. Try to run the app under debugger again
 
 Maybe it helps.
+
+---
 
 Happy debugging!
