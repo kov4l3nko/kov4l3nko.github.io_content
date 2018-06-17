@@ -70,7 +70,7 @@ function main() {
 main();
 ```
 
-As result, I saw HTTP(s) traffic of the Loops app:
+The script was tested with iPhone 5s running iOS 11.0.1 with Electra 1.0.4. As result, I saw HTTP(s) traffic of the Loops app:
 
 ![](sniff_example.png)
 
