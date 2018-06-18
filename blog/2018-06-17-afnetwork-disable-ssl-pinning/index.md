@@ -78,4 +78,10 @@ The script was tested with iPhone 5s running iOS 11.0.1 with Electra 1.0.4. As r
 
 The research and the script creation took 30 min.
 
+--
+
+__WARNING!__ If you wanna try to use the script, do it on your own risk. Stable and safe work of the script is not guaranteed.
+
+--
+
 So it goes.
