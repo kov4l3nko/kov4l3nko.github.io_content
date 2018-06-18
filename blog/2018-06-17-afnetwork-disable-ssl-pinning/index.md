@@ -1,5 +1,5 @@
 ---
-title: Cracking SSL pinning in AFNetwork
+title: Cracking SSL pinning in AFNetworking
 date: 2018-06-17
 draft: false
 toc: false
