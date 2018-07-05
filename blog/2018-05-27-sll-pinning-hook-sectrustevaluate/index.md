@@ -48,7 +48,7 @@ The script code:
 		1. Run Viber on the device
 		
 		2. Inject the script to the process:
-			$ frida -U -n Viber  -l killSSL.js
+			$ frida -U -n Viber  -l path/to/killSSL.js
 		
 		3. SSL pinning in Viber HTTPs is
 		   disabled. Now you can intercept
