@@ -9,16 +9,16 @@ type: post
 
 ---
 
-The first edition of this article was written on March 18, 2018. This is the second edition, with some important updates.
+The first edition of this article was written on March 18, 2018. This is the second edition, with some important updates. Please note that this article is about [the "old" Electra for iOS 11.0-11.1.2](https://coolstar.org/electra1112/).
 
 ---
 
-I tried to google a short and clear instruction how to debug apps from AppStore on iOS devices jailbroken with [Electra](https://coolstar.org/electra/). I did not found anything useful, so I wrote this guide. It works for me, but I'm not sure it works for your. I tested it on 
+I tried to google a short and clear instruction how to debug apps from AppStore on iOS devices jailbroken with [Electra](https://coolstar.org/electra1112/). I did not found anything useful, so I wrote this guide. It works for me, but I'm not sure it works for your. I tested it on 
 
 * iPhone 7 running iOS 11.1.2 
 * iPhone 5s running iOS 11.0.1
 
-Both devices were jailbroken with Electra jailbreak 1.0.4. 
+Both devices were jailbroken with [Electra jailbreak 1.0.4](https://coolstar.org/electra1112/). 
 
 # Deploying `debugserver` from Xcode to your device
 
