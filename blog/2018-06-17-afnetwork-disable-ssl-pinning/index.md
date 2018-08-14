@@ -7,9 +7,7 @@ math: false
 type: post
 ---
 
-I continue to play with SSL pinning on iOS. This time is was [AFNetworking](https://github.com/AFNetworking/AFNetworking) framework.
-
-Today a random guy from Twitter asked me to disable SSL on the [Loops](https://itunes.apple.com/sa/app/loops-your-live-playground/id1085411495?mt=8) app for Android and iOS. From time to time I do quick researches for free, so why not?
+I continue to play with SSL pinning on iOS. This time is was [AFNetworking](https://github.com/AFNetworking/AFNetworking) framework. Today a random guy from Twitter asked me to disable SSL on the [Loops](https://itunes.apple.com/sa/app/loops-your-live-playground/id1085411495?mt=8) app for Android and iOS. From time to time I do quick researches for free, so why not?
 
 It is well known that the "key function" of SSL pinning protection in AFNetworking is the method
 
