@@ -27,7 +27,7 @@ According to the [TrustKit documentation](https://github.com/datatheorem/TrustKi
 
 and set `TKSEnforcePinning` to zero at the method entry point. It might work, but it needed to get a mutable copy of the `NSDictionary` with the settings, then to get all nested dictionaries and their mutable copies, then to alternate them all, then to assemble all that crap back into a "fixed" immutable setting dictionary... it was too much coding for a lazy guy like me :)
 
-So I found a another way. I just replaced
+So I found another way. I just replaced
 
 ```
 // See https://github.com/datatheorem/TrustKit/blob/master/TrustKit/Pinning/ssl_pin_verifier.m 
@@ -84,7 +84,7 @@ function main() {
 main();
 ```
 
-It worked for me and I saw the traffic:
+It worked for me, I intercepted the traffic:
 
 ![](request_without_tk.png)
 
