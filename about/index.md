@@ -8,7 +8,7 @@ type: page
 
 My contacts:
 
--   Email: [kov4l3nko@gmail.com](mailto:kov4l3nko@gmail.com) (if you wanna tell a secret, use [my PGP public key](kov4l3nko@gmail.com_public_key.asc))
+-   Email: [kov4l3nko@gmail.com](mailto:kov4l3nko@gmail.com)
 -   Twitter: [@kov4l3nko](https://twitter.com/kov4l3nko)
 -   GitHub: [@kov4l3nko](https://github.com/kov4l3nko)
 -   LinkedIn: [@kov4l3nko](https://www.linkedin.com/in/kov4l3nko/)
